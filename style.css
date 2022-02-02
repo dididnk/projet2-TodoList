@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    overflow: hidden;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+h1{
+    text-transform: uppercase;
+}
+.add_zone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    font-size: 1.5em;
+    padding: .5em;
+    width: 50%;
+}
+.add_zone label{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+.add_zone label input{
+    width: 90%;
+    height: 100%;
+    font-size: .8em;
+    padding: 0.3em;
+}
+.add_zone label button{
+    color: white;
+    font-size: .8em;
+    padding: 0.3em;
+    height: 100%;
+    background-color: rgb(12, 140, 199);
+    cursor: pointer;
+}
+.add_zone label button:hover{
+
+    background-color: rgb(25, 170, 90);
+}
+.wrapper{
+    background: lightgray;
+    backdrop-filter: blur(5px);
+    padding: 3em;
+    width: 50%;
+    border-radius: 0.5em;
+}
+
+.wrapper .item{
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 17px;
+    margin-bottom: 1em;
+}
+.wrapper .item .text{
+    font-size: 1.3em;
+}
+.wrapper .item i{
+    font-size: 2em;
+    cursor: pointer;
+}
+.wrapper .item i input{
+    width: 28px;
+    height: 27px;
+}
