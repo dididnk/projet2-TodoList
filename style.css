@@ -15,10 +15,18 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    padding: 20px;
     color: white;
 }
 
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
 h1{
     text-transform: uppercase;
 }
@@ -26,30 +34,28 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2em;
-    font-size: 1.5em;
+    margin:  2em;
     padding: .5em;
     width: 50%;
 }
 .add_zone label{
     width: 70%;
-    height: 100%;
+    height: 2em;
     display: flex;
+    font-size: .8em;
     justify-content: space-between;
     padding: 0 1.5em;
 }
 .add_zone label input{
-    width: 90%;
+    width: 100%;
     height: 100%;
-    font-size: .8em;
     padding: 0.3em;
 }
 .add_zone label button{
     color: white;
-    font-size: .8em;
     padding: 0.3em;
     height: 100%;
-    background-color: rgb(12, 140, 199);
+    background-color: rgb(118, 121, 122);
     cursor: pointer;
 }
 .add_zone label button:hover{
@@ -57,11 +63,15 @@ h1{
     background-color: rgb(25, 170, 90);
 }
 .wrapper{
+    flex: 2;
     background: lightgray;
     backdrop-filter: blur(5px);
     padding: 3em;
     width: 50%;
+    height: 100%;
     border-radius: 0.5em;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .wrapper .item{
@@ -83,4 +93,16 @@ h1{
 .wrapper .item i input{
     width: 28px;
     height: 27px;
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    margin-top: 1em;
+    bottom: 0;
 }
