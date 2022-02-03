@@ -1,0 +1,56 @@
+<template>
+
+<require from="./explorer-todo.less"></require>
+
+<div class="explorer-panel main">
+	<h1>Mes tâches</h1>
+	
+	<div class="mainTask">
+		<div class="taskEdit">
+			<h2>Ajouter une tâche</h2>
+			<form submit.trigger="addTask()">
+				<p>
+					<input type="text" class="toDoText" placeholder="ajoutez une tâche" value=${exemple}>
+					<button type="submit" click.delegate="addTask()" class="toDoAdd">Ajouter</button>
+				</p>
+			</form>
+		
+		</div>
+		
+		<div class="taskToDo">
+			<h2>Tâche à faire</h2>
+			<div class="toDoContain">
+				<ul>
+					<li>
+						<input type="checkbox"> 
+						<span class="todoOfTodo"> ${tasks.title} </span>
+						<button><i class="fal fa-trash-alt"></i></button>
+					</li>
+					<li>
+						<input type="checkbox"> 
+						<span class="todoOfTodo"> ${tasks.title} </span>
+						<button><i class="fal fa-trash-alt"></i></button>
+					</li>
+					<li>
+						<input type="checkbox"> 
+						<span class="todoOfTodo"> ${tasks.title} </span>
+						<button><i class="fal fa-trash-alt"></i></button>
+					</li>
+					<li>
+						<input type="checkbox"> 
+						<span class="todoOfTodo"> ${tasks.title} </span>
+						<button><i class="fal fa-trash-alt"></i></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="taskDone">
+			<h2>Tâche effectuée</h2>
+			<div class="taskDoneValue" >${tasks.title}</div>
+		</div>
+	</div>
+	
+</div>
+
+</template> 

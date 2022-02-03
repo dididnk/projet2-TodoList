@@ -1,0 +1,69 @@
+@import "../styles/default.less";
+
+.main{
+	width: 100;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: @fontSize;
+	color: @textColor;
+}
+h1{
+	color: @h1Color;
+	font-size: @h1FontSize;
+	font-weight: bold;
+}
+h2{
+	color: @h1Color;
+	font-size: @h2FontSize;
+	font-weight: bold;
+}
+ul{
+	list-style: none;
+}
+.mainTask{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.taskEdit{
+	width: 30%;
+	padding-left: 1em;
+	p{
+		width: 90%;
+		height: 2em;
+		font-size: 1em;
+		.toDoText{
+			padding: 2px .4ex;
+			width: 80%;
+			height: 2em;
+			border: none;
+			padding-left: 1em;
+		}
+		.toDoAdd{
+			padding: 2px .4ex;
+			height: 2em;
+			border: 1px solid black;
+		}
+
+	}
+}
+.toDoContain{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-between;
+}
+.taskToDo{
+	width: 35%;
+	padding-left: 1em;
+}
+.taskDone{
+	width: 35%;
+	padding-left: 1em;
+}
