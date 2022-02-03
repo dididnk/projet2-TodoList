@@ -2,7 +2,9 @@ const newTodo   = document.querySelector(".todo_name");
 const addTodo   = document.querySelector(".add_todo");
 const dragArea  = document.querySelector(".wrapper");
 const myWrapper = document.querySelector(".wrapper");
+const myWrapper2= document.querySelector(".wrapper2");
 let todo        = [];
+let doneWork    = [];
 let test = "";
 
 // on ajoute un élément par un click
@@ -32,8 +34,21 @@ addTodo.addEventListener('click', ()=>{
 
                 myItem[j].appendChild(deleteTodo);
                 
+                // Suppression d'un todo
                 deleteTodo.addEventListener('click', ()=>{
+                    let newDoneList = document.createElement('div');
+                        newDoneList.className = "doneItem";
+                        doneWork.push(todo[j]);
+
+                        for (let i = 0; i < doneWork.length; i++) {
+
+                            newDoneList.innerHTML = todo[j];
+                            myWrapper2.appendChild(newDoneList);
+                
+                        }
+                    // myWrapper2.appendChild(myItem[j]);
                     myWrapper.removeChild(myItem[j]);
+                    
                 })
             }
         }
